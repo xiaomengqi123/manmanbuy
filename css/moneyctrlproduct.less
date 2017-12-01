@@ -1,0 +1,187 @@
+@import "../less/px2rem.less";
+
+.m_header {
+    height: 100/2*@base;
+    position:relative;
+    .left {
+        color: #fff;
+        font-weight: 600;
+        .font-size(40);
+        line-height: 50*@base;
+        padding-left: 140*@base;
+    }
+    .back{
+        a{
+            width:55/2*@base;
+            height:55/2*@base;
+            background-image : url("../images/icon_bar.png");
+            background-size: 220px 132px;
+            background-position: -98px -7px;
+            position:absolute;
+            top:12*@base;
+            left:20*@base;
+        }
+     
+    }
+  }
+.clearfix(){
+    &::after{
+        content:"";
+        display:block;
+        clear:both;
+    }
+}
+.productdetail{
+    padding:15*@base 15*@base; 
+   .topcontent{
+    h4{
+        .font-size(34);
+        font-weight:600;
+        padding-bottom:15*@base;
+       }
+       .time{
+           color:#666;
+           .font-size(24);
+           padding-bottom:15*@base;
+       }
+       .content{
+           width:100%;
+           p{
+               width:200*@base;
+               float:left;
+               margin-right:15*@base;
+               .font-size(24);
+           }
+           img{
+            //    width:30%;
+               float:right;
+               height:240/2*@base;
+               width:240/2*@base;
+               
+           }
+       } 
+       .say{
+           .font-size(35);
+       }
+       .img img{
+        display:block;
+        margin:15*@base auto;
+        width:500/2*@base;
+        height:550/2*@base;
+       }
+   }
+   .place{
+       width:100%;
+    ul{
+        width:275/2*@base;
+        border-right:1px solid #ccc;
+        border-left:1px solid #ccc;
+        margin:0 auto;
+        // padding:0 20*@base 10*@base 20*@base;
+        box-shadow:0 0 5px #ccc;
+        border-bottom:1px solid #ccc;
+
+        li{
+            padding:8*@base;
+            // height:25*@base;
+            border-bottom:1px dashed #ccc;
+            line-height:25*@base; 
+            .font-size(30);
+          span{
+             strong{
+                float:right;
+                color:#F38010;
+             } 
+          }
+        }
+    }
+    .btn{
+        margin:10*@base;
+        width:100%;
+        height: 30*@base;
+        background-color: #F38010;
+        display:block;
+        text-align:center;
+        line-height:30*@base;
+        color:#fff;
+        font-weight:600;
+        .font-size(30); 
+        border-radius:4*@base;
+    }
+
+   }
+   .erweima{
+       display:block;
+       width: 100%;
+       margin-top:30*@base;
+   }
+   .comment{
+       .tit{
+           .font-size(32);
+           padding:20*@base 15*@base;
+       }
+       .reply{
+           .form{
+               position:relative;
+               textarea{
+                   width:100%;
+                   height:220/2*@base;
+                   border-radius:5*@base;
+               }
+               .tjdp{
+                   height:70/2*@base;
+                   width:100*@base;
+                   background-color:#F38010;
+                   position:absolute;
+                   bottom:3*@base;
+                   right:0;
+                   border-radius:5*@base;
+                   color:#fff;
+                   .font-size(30);
+                   font-weight:500;
+               }
+           }
+
+       }
+       .list{
+           ul{
+               li.ui-border-b{
+                   border-bottom:1px solid #ccc;
+                    .clearfix();
+                    padding:10*@base;
+                   .userimg{
+                      width:50*@base;
+                      height:50*@base;
+                      float:left;
+                      img{
+                          width: 100%;
+                          height: 100%;;
+                          border-radius:25*@base;
+                      }
+                   }
+                   .con{
+                    padding-left:10*@base;
+                    overflow:hidden;
+                       .name{
+                           padding-left:10*@base;
+                           .username{
+                              float:left;
+                           }
+                           .time{                           
+                              float:right;
+                       }
+                    }
+                       .content{
+                           padding-top:10*@base;
+                        padding-left:10*@base;
+                       }
+                   
+               }
+           }
+
+       }
+   }
+  }
+
+}
+

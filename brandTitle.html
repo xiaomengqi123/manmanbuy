@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <meta content="maximum-dpr=2" name="flexible" />
+    <meta content="modeName=750-12" name="grid" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="./css/commom.css">
+    <link rel="stylesheet" href="./css/brandTitle.css">
+    <title>品牌大全</title>
+</head>
+
+<body>
+    <div class="container">
+        <!--头部固定-->
+        <div class="m_header">
+            <div class="m_log">
+                <div class="back">
+                    <a href="javascript:history.go(-1);"></a>
+                </div>
+                <div class="left">
+                    商城导航
+                </div>
+                <div class="right">
+                    <img src="./images/header_app.png" alt="">
+                </div>
+            </div>
+            <div class="m_search clearfix">
+                <input type="text" placeholder="请输入您想比价的商品">
+                <button>搜索</button>
+            </div>
+        </div>
+        <!-- 三级导航 -->
+        <div class="path">
+            <div class="left clearfix">
+                <ul>
+                    <li>
+                        <a href="index.html"> 首页 ></a>
+                    </li>
+                    <li>
+                        <a href="category.html"> 全部分类 ></a>
+                    </li>
+                </ul>
+                <a href="javascript:;" class="button">筛选</a>
+            </div>
+        </div>
+
+        <!-- 品牌列表 -->
+        <div class="toptitle">
+            <div class="title">热门品牌排行</div>
+
+            <div class="categoryList">
+                <ul>
+                     <!-- <li>
+                        <a href="#">平板电脑十大品牌</a>
+                    </li> -->
+                </ul>
+            </div>
+
+        </div>
+
+
+        <!--底部-->
+        <div class="footer">
+            <div class="bottom_nav clearfix">
+                <ul>
+                    <li>
+                        <a href="#">登录</a>
+                    </li>
+                    <li>
+                        <a href="#">注册</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/top.jpg" alt=""> 回到顶部</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <p>
+                    <span>手机掌上APP下载</span>慢慢买手机版 -- 掌上比价平台</p>
+                <span>m.manmanbuy.com</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 三级菜单路径 -->
+    <script type="text/html" id="pathTpl">
+        <li>
+            <a href="index.html"> 首页 ></a>
+        </li>
+        <li>
+            <a href="category.html"> 全部分类 ></a>
+        </li>
+        <li>
+            <a href="#"> {{result[0].category}} ></a>
+        </li>
+    </script>
+
+
+    <!--分类引擎 -->
+    <script type="text/html" id="catListTpl">
+        {{each result v i}}
+        <li>
+            <a href="brand.html?brandtitleid={{v.brandTitleId}}" >{{v.brandTitle}}</a>
+        </li>
+        {{/each}}
+    </script>
+
+
+
+
+
+    <script src="./lib/lib-flexible/flexible.debug.js"></script>
+    <script src="./lib/jquery/jquery.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="js/common/route.js"></script>
+    <script src="js/pages/common.js"></script>
+    <script src="js/pages/brandTitle.js"></script>
+
+    <script>
+        //  window.onload = function( ) {
+        //     location.href = 'index.html';
+        // };
+    </script>
+</body>
+
+</html>

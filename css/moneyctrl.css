@@ -1,0 +1,107 @@
+.m_header {
+  height: 1.33335rem;
+  position: relative;
+}
+.m_header .left {
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.33335rem;
+  padding-left: 2.93337rem;
+}
+[data-dpr='2'] .m_header .left {
+  font-size: 40px;
+}
+[data-dpr='2.5'] .m_header .left {
+  font-size: 50px;
+}
+[data-dpr="2.75"] .m_header .left {
+  font-size: 55px;
+}
+[data-dpr="3"] .m_header .left {
+  font-size: 60px;
+}
+[data-dpr="4"] .m_header .left {
+  font-size: 80px;
+}
+.m_header .back a {
+  width: 0.7333425rem;
+  height: 0.7333425rem;
+  background-image: url("../images/icon_bar.png");
+  background-size: 220px 132px;
+  background-position: -98px -7px;
+  position: absolute;
+  top: 0.400005rem;
+  left: 0.53334rem;
+}
+.product {
+  background-color: #fff;
+}
+.product > ul > li {
+  width: 100%;
+  height: 3.73338rem;
+  border-bottom: 1px solid #B9C4D0;
+}
+.product > ul > li a {
+  display: block;
+}
+.product > ul > li a img {
+  width: 3.20004rem;
+  height: 3.20004rem;
+  background-size: 100% 100%;
+  padding-top: 0.26667rem;
+  float: left;
+}
+.product > ul > li a .body {
+  padding-left: 3.46671rem;
+}
+.product > ul > li a .body h4 {
+  color: #000;
+  font-size: 13px;
+  padding-top: 0.26667rem;
+  padding-right: 0.320004rem;
+}
+[data-dpr='2'] .product > ul > li a .body h4 {
+  font-size: 25px;
+}
+[data-dpr='2.5'] .product > ul > li a .body h4 {
+  font-size: 31px;
+}
+[data-dpr="2.75"] .product > ul > li a .body h4 {
+  font-size: 34px;
+}
+[data-dpr="3"] .product > ul > li a .body h4 {
+  font-size: 38px;
+}
+[data-dpr="4"] .product > ul > li a .body h4 {
+  font-size: 50px;
+}
+.product > ul > li a .body .price {
+  color: red;
+  margin-top: 0.133335rem;
+  display: block;
+  font-size: 10px;
+}
+[data-dpr='2'] .product > ul > li a .body .price {
+  font-size: 20px;
+}
+[data-dpr='2.5'] .product > ul > li a .body .price {
+  font-size: 25px;
+}
+[data-dpr="2.75"] .product > ul > li a .body .price {
+  font-size: 28px;
+}
+[data-dpr="3"] .product > ul > li a .body .price {
+  font-size: 30px;
+}
+[data-dpr="4"] .product > ul > li a .body .price {
+  font-size: 40px;
+}
+.product > ul > li a .body p {
+  color: #B9C4D0;
+  padding-right: 0.26667rem;
+  line-height: 1.946691rem;
+}
+.product > ul > li a .body p .com {
+  float: right;
+}

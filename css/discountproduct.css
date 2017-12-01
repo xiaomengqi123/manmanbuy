@@ -1,0 +1,279 @@
+.m_header {
+  height: 1.33335rem;
+  position: relative;
+}
+.m_header .left {
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.33335rem;
+  padding-left: 3.73338rem;
+}
+[data-dpr='2'] .m_header .left {
+  font-size: 40px;
+}
+[data-dpr='2.5'] .m_header .left {
+  font-size: 50px;
+}
+[data-dpr="2.75"] .m_header .left {
+  font-size: 55px;
+}
+[data-dpr="3"] .m_header .left {
+  font-size: 60px;
+}
+[data-dpr="4"] .m_header .left {
+  font-size: 80px;
+}
+.m_header .back a {
+  width: 0.7333425rem;
+  height: 0.7333425rem;
+  background-image: url("../images/icon_bar.png");
+  background-size: 220px 132px;
+  background-position: -98px -7px;
+  position: absolute;
+  top: 0.320004rem;
+  left: 0.53334rem;
+}
+.productdetail {
+  padding: 0.400005rem 0.400005rem;
+}
+.productdetail .topcontent h4 {
+  font-size: 17px;
+  font-weight: 600;
+  padding-bottom: 0.400005rem;
+}
+[data-dpr='2'] .productdetail .topcontent h4 {
+  font-size: 34px;
+}
+[data-dpr='2.5'] .productdetail .topcontent h4 {
+  font-size: 43px;
+}
+[data-dpr="2.75"] .productdetail .topcontent h4 {
+  font-size: 47px;
+}
+[data-dpr="3"] .productdetail .topcontent h4 {
+  font-size: 51px;
+}
+[data-dpr="4"] .productdetail .topcontent h4 {
+  font-size: 68px;
+}
+.productdetail .topcontent .time {
+  color: #666;
+  font-size: 12px;
+  padding-bottom: 0.400005rem;
+}
+[data-dpr='2'] .productdetail .topcontent .time {
+  font-size: 24px;
+}
+[data-dpr='2.5'] .productdetail .topcontent .time {
+  font-size: 30px;
+}
+[data-dpr="2.75"] .productdetail .topcontent .time {
+  font-size: 33px;
+}
+[data-dpr="3"] .productdetail .topcontent .time {
+  font-size: 36px;
+}
+[data-dpr="4"] .productdetail .topcontent .time {
+  font-size: 48px;
+}
+.productdetail .topcontent .content {
+  width: 100%;
+}
+.productdetail .topcontent .content p {
+  width: 5.3334rem;
+  float: left;
+  margin-right: 0.400005rem;
+  font-size: 12px;
+}
+[data-dpr='2'] .productdetail .topcontent .content p {
+  font-size: 24px;
+}
+[data-dpr='2.5'] .productdetail .topcontent .content p {
+  font-size: 30px;
+}
+[data-dpr="2.75"] .productdetail .topcontent .content p {
+  font-size: 33px;
+}
+[data-dpr="3"] .productdetail .topcontent .content p {
+  font-size: 36px;
+}
+[data-dpr="4"] .productdetail .topcontent .content p {
+  font-size: 48px;
+}
+.productdetail .topcontent .content img {
+  float: right;
+  height: 3.20004rem;
+  width: 3.20004rem;
+}
+.productdetail .topcontent .say {
+  font-size: 18px;
+}
+[data-dpr='2'] .productdetail .topcontent .say {
+  font-size: 35px;
+}
+[data-dpr='2.5'] .productdetail .topcontent .say {
+  font-size: 44px;
+}
+[data-dpr="2.75"] .productdetail .topcontent .say {
+  font-size: 48px;
+}
+[data-dpr="3"] .productdetail .topcontent .say {
+  font-size: 53px;
+}
+[data-dpr="4"] .productdetail .topcontent .say {
+  font-size: 70px;
+}
+.productdetail .topcontent .img img {
+  display: block;
+  margin: 0.400005rem auto;
+  width: 6.66675rem;
+  height: 7.333425rem;
+}
+.productdetail .place {
+  width: 100%;
+}
+.productdetail .place ul {
+  width: 3.6667125rem;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  margin: 0 auto;
+  box-shadow: 0 0 5px #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.productdetail .place ul li {
+  padding: 0.213336rem;
+  border-bottom: 1px dashed #ccc;
+  line-height: 0.666675rem;
+  font-size: 15px;
+}
+[data-dpr='2'] .productdetail .place ul li {
+  font-size: 30px;
+}
+[data-dpr='2.5'] .productdetail .place ul li {
+  font-size: 38px;
+}
+[data-dpr="2.75"] .productdetail .place ul li {
+  font-size: 41px;
+}
+[data-dpr="3"] .productdetail .place ul li {
+  font-size: 45px;
+}
+[data-dpr="4"] .productdetail .place ul li {
+  font-size: 60px;
+}
+.productdetail .place ul li span strong {
+  float: right;
+  color: #F38010;
+}
+.productdetail .place .btn {
+  margin: 0.26667rem;
+  width: 100%;
+  height: 0.80001rem;
+  background-color: #F38010;
+  display: block;
+  text-align: center;
+  line-height: 0.80001rem;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 0.106668rem;
+}
+[data-dpr='2'] .productdetail .place .btn {
+  font-size: 30px;
+}
+[data-dpr='2.5'] .productdetail .place .btn {
+  font-size: 38px;
+}
+[data-dpr="2.75"] .productdetail .place .btn {
+  font-size: 41px;
+}
+[data-dpr="3"] .productdetail .place .btn {
+  font-size: 45px;
+}
+[data-dpr="4"] .productdetail .place .btn {
+  font-size: 60px;
+}
+.productdetail .erweima {
+  display: block;
+  width: 100%;
+  margin-top: 0.80001rem;
+}
+.productdetail .comment .tit {
+  font-size: 16px;
+  padding: 0.53334rem 0.400005rem;
+}
+[data-dpr='2'] .productdetail .comment .tit {
+  font-size: 32px;
+}
+[data-dpr='2.5'] .productdetail .comment .tit {
+  font-size: 40px;
+}
+[data-dpr="2.75"] .productdetail .comment .tit {
+  font-size: 44px;
+}
+[data-dpr="3"] .productdetail .comment .tit {
+  font-size: 48px;
+}
+[data-dpr="4"] .productdetail .comment .tit {
+  font-size: 64px;
+}
+.productdetail .comment .reply .form {
+  position: relative;
+}
+.productdetail .comment .reply .form textarea {
+  width: 100%;
+  height: 2.93337rem;
+  border-radius: 0.133335rem;
+}
+.productdetail .comment .reply .form .tjdp {
+  height: 0.933345rem;
+  width: 2.6667rem;
+  background-color: #F38010;
+  position: absolute;
+  bottom: 0.080001rem;
+  right: 0;
+  border-radius: 0.133335rem;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+[data-dpr='2'] .productdetail .comment .reply .form .tjdp {
+  font-size: 30px;
+}
+[data-dpr='2.5'] .productdetail .comment .reply .form .tjdp {
+  font-size: 38px;
+}
+[data-dpr="2.75"] .productdetail .comment .reply .form .tjdp {
+  font-size: 41px;
+}
+[data-dpr="3"] .productdetail .comment .reply .form .tjdp {
+  font-size: 45px;
+}
+[data-dpr="4"] .productdetail .comment .reply .form .tjdp {
+  font-size: 60px;
+}
+.productdetail .comment .list ul .ui-border-b .userimg {
+  width: 1.33335rem;
+  height: 1.33335rem;
+}
+.productdetail .comment .list ul .ui-border-b .userimg.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.productdetail .comment .list ul .ui-border-b .userimg img {
+  float: left;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.productdetail .comment .list ul .ui-border-b .con .name .username {
+  float: left;
+}
+.productdetail .comment .list ul .ui-border-b .con .name .time {
+  float: right;
+}
+.productdetail .comment .list ul .ui-border-b .con .content {
+  padding-left: 1.386684rem;
+}

@@ -1,0 +1,307 @@
+@import "../less/px2rem.less";
+
+*{
+  padding: 0;
+  margin: 0;   
+  box-sizing:border-box;
+  -webkit-top-highlight-color:transparent;
+}
+a{
+  text-decoration:none;
+}
+li{
+  list-style:none;
+}
+img{
+  vertical-align: bottom;
+}
+input{
+  border:0;
+  outline:0;
+}
+.pull-left{
+  float:left;
+}
+.pull-right{
+  float:right;
+}
+.clearfix::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+@main-color:#f23030;
+
+.text-center{
+  text-align:center;
+}
+// 头部
+.m_header{
+    width: 100%;
+    height: 100*@base;
+    .m_log{
+      width: 100%;
+      height: 50*@base;
+      background-color:#ff841d;
+      .left{
+        float:left;
+        img{
+          width:(371/2)*@base;
+          display:block;
+          padding-top:12*@base;
+          padding-left:10*@base;
+        }
+      }
+      .right{
+        float:right;
+        img{
+          width:(68/2)*@base;
+          display:block;
+          padding-top:8*@base;
+          margin-right:5*@base;
+        }
+      }
+  
+    }
+    .m_search{
+      height: 50*@base;
+      width: 100%;
+      line-height: 50*@base;
+      >input{
+        height: 30*@base;
+        width:70%;
+        border-radius:15*@base;
+        background-color:#F1F1F1;
+        padding-left:12*@base;
+        margin-left:12*@base;
+      }
+      >button{
+        width:20%;
+        margin-left:5%;
+         height: 30*@base;
+         border-radius:15*@base;
+         background-color:#ff841d;
+         border:0;
+         color:#fff;
+         .font-size(32);
+    }
+  }
+  
+  }
+
+//   底部
+.footer{
+    height:330/2*@base;
+    width: 100%;
+    background-color: #F1f1F1;
+    padding-top:10*@base;
+    .title{
+      height:65/2*@base;
+      background-color:#ff841d;
+      width: 100%;
+      padding-bottom:50/2*@base;
+       >span{
+         float:left;
+         line-height:65/2*@base;
+         padding-left:10*@base; 
+         color:#fff;
+         .font-size(36);
+       }
+       >img{
+         height:20*@base;
+         weight:20*@base;
+         float:right;
+         margin-top:6*@base;
+         padding-right:10*@base;
+       }
+
+    }
+    .bottom_nav{
+      margin-top:25*@base;
+      width: 100%;
+      height:65/2*@base;
+      padding:0 10*@base;
+      border-top:1px solid #C9C9C9;
+      border-bottom:1px solid #C9C9C9;
+      ul{   
+       
+        li{
+          text-align:center;
+          line-height:65/2*@base;
+          float:left;
+          border-right:1px solid #C9C9C9;
+          width:33%;
+          text-align:center;
+          
+          a{
+           .font-size(30);
+            color:#000;
+        
+          }
+          &:nth-child(3){
+            border-right:0;
+            img{
+               width:15*@base;
+               vertical-align: middle;
+            }
+          }
+        }
+      }
+    }
+
+    .bottom{
+      width:100%;  
+      text-align:center;      
+      p{
+      padding-top:20*@base;
+      color:#5a5a5a;
+       span{
+         color:red;
+       }
+      }
+      span{
+        color:#5a5a5a;
+      }
+    }
+
+  }
+
+  // 路径导航
+  .path{
+    width: 100%;
+    background-color:#F4F4F4;  
+    padding-left:8*@base;
+    border-top:1px solid #C9C9C9;
+    border-bottom:1px solid #C9C9C9;
+    .left{
+    height:80/2*@base;
+    width: 100%;
+        ul{
+            float:left;
+            padding-left:5*@base;
+            li{
+                float:left;
+                a{
+                  line-height: 75/2*@base;
+                  color:#000;
+                  .font-size(32);
+                }
+            }
+        }
+        .button{
+            float:right;
+            margin-right:8*@base;
+            border:1px solid #ccc;
+            display:block; 
+            padding:5*@base 12*@base;
+            border-radius:6*@base;
+            background-color:#d0d0d0; 
+            margin-top:4*@base;
+            box-shadow: 0 1px 2px #888;
+            color:#000;
+            
+           
+          }
+ 
+    }
+    .product{
+        background-color:#fff;
+        >ul{
+            >li{
+              width: 100%;
+              height: 140*@base;
+             //  background-color:#ccc;
+              border-bottom:1px solid #B9C4D0;
+              a{
+                display:block;
+                img{
+                  width:120*@base;
+                  height: 120*@base;
+                  background-size: 100% 100%;
+                  padding-top:10*@base;
+                  float:left;
+                }
+                .body{
+                  padding-left:130*@base;
+                  h4{
+                   color:#000;
+                   .font-size(25);
+                   padding-top:10*@base;
+                   padding-right:12*@base;
+                  }
+                   .price{
+                   color:red;
+                   margin-top:5*@base;
+                   display:block;
+                   .font-size(20);
+                  }
+                  p{
+                   color:#B9C4D0;
+                   // margin-bottom:8*@base;
+                   line-height: 73*@base;
+                   
+                  }
+                }
+              }
+            }
+          }
+    } 
+   
+}
+
+
+// 更多优惠信息
+.m_more{
+  height:63/2*@base;
+  width: 100%;
+  margin-top:10*@base;
+  >button{
+    width: 100%;
+    height:63/2*@base;
+  }
+}
+
+
+// 分页部分
+.page{
+  text-align:center;
+  width: 100%;
+  height:40*@base;
+  margin-top:15*@base;
+  // background-color:#fff;
+  .front{
+      width:33.33%;
+      float:left;
+      height:30*@base;
+      a{
+        background-color:#d4d4d4;
+        display:inline-block;
+        padding:8*@base 20*@base;;
+        border-radius:5*@base;
+        .font-size(20);
+        color:#000;
+      }
+  }
+  .middle{
+      width:33.33%;
+      float:left;
+      height:30*@base;
+
+      select{
+      padding:8*@base 15*@base;        
+      }
+  }
+  .right{
+      width:33.33%;
+      float:left;
+      height:30*@base;
+      a{
+        background-color:#d4d4d4;
+        display:inline-block;
+        padding:8*@base 20*@base;
+        border-radius:5*@base;
+        .font-size(20);
+        color:#000;
+      }
+  }
+}

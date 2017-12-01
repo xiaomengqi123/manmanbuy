@@ -1,0 +1,129 @@
+.m_header {
+  height: 1.33335rem;
+  position: relative;
+}
+.m_header .left {
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.33335rem;
+  padding-left: 3.73338rem;
+}
+[data-dpr='2'] .m_header .left {
+  font-size: 40px;
+}
+[data-dpr='2.5'] .m_header .left {
+  font-size: 50px;
+}
+[data-dpr="2.75"] .m_header .left {
+  font-size: 55px;
+}
+[data-dpr="3"] .m_header .left {
+  font-size: 60px;
+}
+[data-dpr="4"] .m_header .left {
+  font-size: 80px;
+}
+.m_header .back a {
+  width: 0.7333425rem;
+  height: 0.7333425rem;
+  background-image: url("../images/icon_bar.png");
+  background-size: 220px 132px;
+  background-position: -98px -7px;
+  position: absolute;
+  top: 0.400005rem;
+  left: 0.53334rem;
+}
+.discount {
+  width: 100%;
+}
+.discount ul {
+  width: 100%;
+  height: 100%;
+}
+.discount ul li {
+  float: left;
+  height: 7.20009rem;
+  width: 50%;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 0.320004rem;
+}
+.discount ul li:ntn-child(add) {
+  border-right: 0;
+}
+.discount ul li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-align: center;
+}
+.discount ul li a img {
+  width: 3.73338rem;
+  height: 3.73338rem;
+  margin-bottom: 15px ;
+}
+.discount ul li a h4 {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+[data-dpr='2'] .discount ul li a h4 {
+  font-size: 28px;
+}
+[data-dpr='2.5'] .discount ul li a h4 {
+  font-size: 35px;
+}
+[data-dpr="2.75"] .discount ul li a h4 {
+  font-size: 39px;
+}
+[data-dpr="3"] .discount ul li a h4 {
+  font-size: 42px;
+}
+[data-dpr="4"] .discount ul li a h4 {
+  font-size: 56px;
+}
+.discount ul li a p {
+  color: #FF9000;
+  font-size: 14px;
+  margin: 0.133335rem 0;
+}
+[data-dpr='2'] .discount ul li a p {
+  font-size: 28px;
+}
+[data-dpr='2.5'] .discount ul li a p {
+  font-size: 35px;
+}
+[data-dpr="2.75"] .discount ul li a p {
+  font-size: 39px;
+}
+[data-dpr="3"] .discount ul li a p {
+  font-size: 42px;
+}
+[data-dpr="4"] .discount ul li a p {
+  font-size: 56px;
+}
+.discount ul li a span {
+  color: #666;
+  font-size: 12px;
+}
+[data-dpr='2'] .discount ul li a span {
+  font-size: 24px;
+}
+[data-dpr='2.5'] .discount ul li a span {
+  font-size: 30px;
+}
+[data-dpr="2.75"] .discount ul li a span {
+  font-size: 33px;
+}
+[data-dpr="3"] .discount ul li a span {
+  font-size: 36px;
+}
+[data-dpr="4"] .discount ul li a span {
+  font-size: 48px;
+}

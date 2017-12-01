@@ -1,0 +1,179 @@
+@import "../less/px2rem.less";
+.clearfix() {
+    &::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+}
+.m_header {
+    height: 100/2*@base;
+    position:relative;
+    .left {
+        color: #fff;
+        font-weight: 600;
+        .font-size(40);
+        line-height: 50*@base;
+        padding-left: 160*@base;
+    }
+    .back{
+        a{
+            width:55/2*@base;
+            height:55/2*@base;
+            background-image : url("../images/icon_bar.png");
+            background-size: 220px 132px;
+            background-position: -98px -7px;
+            position:absolute;
+            top:12*@base;
+            left:20*@base;
+        }
+     
+    }
+  }
+.gsproduct {
+    // 
+    .topbar {
+        width:100%;
+        height:75/2*@base;
+        border-bottom:1px solid #666;
+        ul {            
+            li {
+                height: 75/2*@base;
+                line-height: 75/2*@base;
+                float: left;
+                width: 33.33%;
+                text-align:center;
+                position:relative;
+
+                a{
+                 display:block;
+                 width: 100%;
+                 height: 100%;
+                 color:#000;
+                 .font-size(30);
+                 font-weight:600;
+                  span{
+                      width: 0;
+                      height: 0;
+                      border-top:7*@base solid transparent;
+                      border-right:7*@base solid transparent;
+                      border-left:7*@base solid transparent;
+                      border-bottom:7*@base solid #666;
+                      position:absolute;
+                      right:20*@base;
+                      bottom:15*@base;
+                  }
+                }
+            }
+        }
+    }
+
+    // 
+    .list{ 
+        &.now{
+        display:none;
+        }       
+        width: 100%;
+        position:absolute;
+        z-index:999;
+        background-color:#fff;
+        ul{
+            li{
+                height:75/2*@base;                
+                width: 100%;
+                padding-left:50*@base;
+                border-bottom:1px solid #666;
+                line-height: 75/2*@base;
+                a{
+                    width: 100%;
+                    color:#666;
+                    .font-size(28);
+                    display:block;
+
+                }
+            }
+        }
+    }
+
+
+    .list1{ 
+        &.now{
+        display:none;
+        }       
+        width: 100%;
+        position:absolute;
+        z-index:999;
+        background-color:#fff;
+        ul{
+            li{
+                height:75/2*@base;                
+                width: 100%;
+                padding-left:50*@base;
+                border-bottom:1px solid #666;
+                line-height: 75/2*@base;
+                a{
+                    width: 100%;
+                    color:#666;
+                    .font-size(28);
+                    display:block;
+
+                }
+            }
+        }
+    }
+
+    .productList{
+        width: 100%;
+        // padding:10*@base;
+        background-color:#ccc;
+        ul{
+            li{
+                float:left;
+                width:49%;
+                text-align:center;
+                background-color:#fff;
+                border:12px solid #ccc;
+                height:455/2*@base;
+                position:relative;
+                a{
+                    img{
+                     height:300/2*@base;
+                     width:280/2*@base;
+                    }
+                    p{
+                        .font-size(30);
+                        color:#000;
+                        width:100%;
+                        overflow:hidden;
+                        white-space:nowrap;
+                        text-overflow:ellipsis;
+
+                    }
+                    span{                     
+                        color:#FF9401;
+                        .font-size(26);
+                        margin-left:-40*@base;
+                        padding-top:20*@base;
+                    }
+                }
+                .btn{
+                    margin-top:5*@base;
+                    display:inline-block;
+                    background-color:#FF9401;
+                    width:50*@base;
+                    height:20*@base;
+                    border-radius:5*@base;
+                    color:#fff;
+                    line-height:20*@base;
+                    text-align:center;
+                    float:right;
+                    margin-right:10*@base; 
+
+
+                }
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,60 @@
+@import "../less/px2rem.less";
+
+.productList{
+    ul{
+        li{
+            .title{
+                height:40*@base;
+                width: 100%;
+                background-color:#EDEDED; 
+                line-height: 40*@base;
+                padding-left:10*@base;
+                border-bottom:1px solid #666;
+                a{
+                    display:block;
+                    .font-size(35);
+                    font-weight:500;
+                    color:#000;
+                    // span{
+                    //     width:15*@base;
+                    //     height:10*@base;
+                    //     display:block;
+                    //     background-image:url("../images/icon_bar.png");
+                    //     background-size:440/2px 264/2px;
+                    //     background-position: -352/2px 0;
+                    // }
+                }
+            }
+           .content{
+               display:none;
+               background-color: #F9F9F9;
+               transition:all 1s;
+               &.now{
+                display:block;
+               }
+              ul{
+                  li{
+                      float:left;
+                      width:33.33%;
+                      margin-top:-1px;
+                      margin-left:-1px;
+                      border:1px solid #D4D4D4;
+                      height: 75/2*@base; 
+                      a{
+                          display:block;
+                          text-align:center;
+                          line-height: 75/2*@base;
+                          .font-size(28);
+                          color:#000;
+                      } 
+
+                  }
+              }
+           }    
+                  
+        }
+    }
+}
+.footer{
+    padding-top:0px;
+}

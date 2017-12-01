@@ -1,0 +1,72 @@
+.m_header {
+  height: 1.33335rem;
+  position: relative;
+}
+.m_header .left {
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.33335rem;
+  padding-left: 4.00005rem;
+}
+[data-dpr='2'] .m_header .left {
+  font-size: 40px;
+}
+[data-dpr='2.5'] .m_header .left {
+  font-size: 50px;
+}
+[data-dpr="2.75"] .m_header .left {
+  font-size: 55px;
+}
+[data-dpr="3"] .m_header .left {
+  font-size: 60px;
+}
+[data-dpr="4"] .m_header .left {
+  font-size: 80px;
+}
+.m_header .back a {
+  width: 0.7333425rem;
+  height: 0.7333425rem;
+  background-image: url("../images/icon_bar.png");
+  background-size: 220px 132px;
+  background-position: -98px -7px;
+  position: absolute;
+  top: 0.400005rem;
+  left: 0.53334rem;
+}
+.shop {
+  width: 100%;
+  padding: 0.400005rem;
+}
+.shop ul li {
+  float: left;
+  padding: 0.26667rem 0.26667rem;
+  border: 1px solid #666;
+  border-radius: 0.133335rem;
+  margin: 0.106668rem;
+  background-color: #ccc;
+}
+.shop ul li a {
+  display: block;
+  color: #000;
+  font-weight: 600;
+}
+.shop ul li a span {
+  padding-left: 0.133335rem;
+  font-size: 14px;
+}
+[data-dpr='2'] .shop ul li a span {
+  font-size: 28px;
+}
+[data-dpr='2.5'] .shop ul li a span {
+  font-size: 35px;
+}
+[data-dpr="2.75"] .shop ul li a span {
+  font-size: 39px;
+}
+[data-dpr="3"] .shop ul li a span {
+  font-size: 42px;
+}
+[data-dpr="4"] .shop ul li a span {
+  font-size: 56px;
+}

@@ -1,0 +1,72 @@
+@import "../less/px2rem.less";
+
+.m_header{
+    .m_log{
+        .back{
+            a{
+                width:55/2*@base;
+                height:55/2*@base;
+                background-image : url("../images/icon_bar.png");
+                background-size: 220px 132px;
+                background-position: -98px -7px;
+                position:absolute;
+                top:15*@base;
+                left:20*@base;
+            }
+        }
+        .left {
+            color: #fff;
+            font-weight: 600;
+            .font-size(40);
+            line-height: 50*@base;
+            padding-left: 150*@base;
+        }
+    }
+}
+
+.toptitle{
+    .title{
+        margin:10*@base;
+        height:40*@base;
+        // width: 100%;
+        background-color:#EEEEEE;
+        border:1px solid #ccc;
+        .font-size(32);
+        color:#000;
+        line-height: 40*@base;
+        padding-left:15*@base;
+    }
+    .categoryList{
+        margin-top:10*@base;
+        ul{
+            width: 100%;
+            // padding:0 10*@base;
+            border:1px solid #ccc;
+            border-radius:5*@base;
+        
+           li{
+                height:40*@base;
+                width:100%;
+                border-bottom:1px solid #ccc;
+                line-height: 40*@base;
+                padding-left:10*@base;
+                background-color:#EDEDED;
+                a{
+                    display:block;
+                    width: 100%;
+                    color:#000;
+                    font-weight:600;
+                    .font-size(30);
+
+                }
+            }
+        }
+    }
+}
+.footer{
+    padding-top:0;
+    
+}
+
+
+

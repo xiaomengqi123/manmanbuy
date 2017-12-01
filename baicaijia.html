@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <meta content="maximum-dpr=2" name="flexible" />
+    <meta content="modeName=750-12" name="grid" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="./css/commom.css">
+    <link rel="stylesheet" href="./css/baicaijia.css">
+    <title>白菜价</title>
+</head>
+
+<body>
+    <div class="container">
+        <!--头部固定-->
+        <div class="m_header">
+            <div class="m_log">
+                <div class="back">
+                    <a href="javascript:history.go(-1);"></a>
+                </div>
+                <div class="left">
+                    白菜价-淘宝内部券
+                </div>
+                <div class="right">
+                    <img src="./images/header_app.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- 导航部分 -->
+        <div class="productdetail">
+            <div class="topbar">
+                <ul class="clearfix">
+                    <!-- 渲染 -->
+                    <!-- <li >
+                        <a href="#">111</a>
+                    </li> -->
+                </ul>
+            </div>
+            <div class="productList">
+                <ul>
+                    <!-- <li> 
+                     <a href="#">
+                        <div class="productimg">
+                         <img src="./images/mnav.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="top">
+                                <h4>[包邮][创彩]纯棉加厚全棉毛巾两条装</h4>
+                                <p>券后$106.0 <span>$206</span></p>
+                            </div>                           
+                            <div class="progress"> -->
+                    <!-- 进度条 -->
+                    <!-- </div>
+                            <div class="quan"> -->
+                    <!-- 券 -->
+                    <!-- </div>
+                        </div>
+                      </a>
+                     </li> -->
+                </ul>
+            </div>
+        </div>
+
+
+        <!--底部-->
+        <div class="footer">
+            <div class="bottom_nav clearfix">
+                <ul>
+                    <li>
+                        <a href="#">登录</a>
+                    </li>
+                    <li>
+                        <a href="#">注册</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/top.jpg" alt=""> 回到顶部</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <p>
+                    <span>手机掌上APP下载</span>慢慢买手机版 -- 掌上比价平台</p>
+                <span>m.manmanbuy.com</span>
+            </div>
+        </div>
+
+        <div class="gotop">
+            <a href="#">
+                <img src="./images/top.jpg" alt="">
+            </a>
+        </div>
+    </div>
+
+    <!-- 头部导航 -->
+    <script type="text/html" id="topbatTpl">
+        {{each result v i}}
+        <li data-titleid="{{v.titleId}}" class="{{ i==0 ? 'now':''}}">
+            <a href="#">{{v.title}}</a>
+        </li>
+        {{/each}}
+    </script>
+    <!-- 渲染产品部分 -->
+    <script type="text/html" id="productTpl">
+        {{each result v i}}
+        <li class="clearfix">
+            <a href="#">
+                <div class="productimg">
+                    {{@ v.productImg}}
+                </div>
+
+                <div class="content clearfix">
+                   <p class="p1"> {{@ v.productName}} </p>
+                   <p class="p2"> {{@ v.productPrice}} </p> 
+                    {{@ v.productCouponRemain}}
+                   <p class="p4">{{@ v.productCoupon}}</p>
+                 <a href="#" class="link">下单链接</a>
+                
+                </div>
+            </a>
+
+        </li>
+        {{/each}}
+    </script>
+
+    <script src="./lib/lib-flexible/flexible.debug.js"></script>
+    <script src="./lib/jquery/jquery.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="js/common/route.js"></script>
+    <script src="js/pages/common.js"></script>
+    <script src="js/pages/baicaijia.js"></script>
+
+    <script>
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <meta content="maximum-dpr=2" name="flexible" />
+    <meta content="modeName=750-12" name="grid" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="./css/commom.css">
+    <link rel="stylesheet" href="./css/gsproduct.css">
+
+    <title>凑单品</title>
+</head>
+
+<body>
+    <div class="container">
+        <!--头部固定-->
+        <div class="m_header">
+            <div class="m_log">
+                <div class="back">
+                    <a href="javascript:history.go(-1);"></a>
+                </div>
+                <div class="left">
+                    凑单品
+                </div>
+                <div class="right">
+                    <img src="./images/header_app.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- 导航部分 -->
+        <div class="gsproduct">
+
+            <!-- 导航 -->
+            <div class="topbar">
+                 <ul class="clearfix">
+                    <li class="shopname">
+                        <a href="javascript:;" class="shop">
+                            <p>京东</p>
+                            <span></span>
+                        </a>
+                    </li>
+                    <li class="placename">
+                        <a href="javascript:;" class="place">
+                            <p>华北</p>                            
+                            <span></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">全部价格
+                            <span></span>
+                        </a>
+                    </li>
+                </ul> 
+            </div>
+
+            <!-- 店铺列表内容 -->
+            <div class="list now">
+                <ul>
+                     <!-- <li>
+                        <a href="">天猫</a>
+                    </li> -->
+                </ul>
+            </div>
+             <!-- 地区列表 -->
+            <div class="list1 now">
+                    <ul>
+    
+                    </ul>
+                </div>
+    
+            
+
+            <!-- 产品 -->
+            <div class="productList">
+                <ul class="clearfix">
+                    <!-- <li>
+                        <a href="#">
+                            <img src="./images/product.jpg" alt="">
+                            <p>[京东超市] 以南 咖啡</p>
+                            <span>#0.50</span>
+                        </a>
+                        <a href="javascript:;" class="btn">凑单</a>
+                    </li> -->
+                </ul>
+            </div>
+
+        </div>
+
+
+        <!--底部-->
+        <div class="footer">
+            <div class="bottom_nav">
+                <ul class="clearfix">
+                    <li>
+                        <a href="#">登录</a>
+                    </li>
+                    <li>
+                        <a href="#">注册</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/top.jpg" alt=""> 回到顶部</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <p>
+                    <span>手机掌上APP下载</span>慢慢买手机版 -- 掌上比价平台</p>
+                <span>m.manmanbuy.com</span>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- 店铺信息 -->
+    <script type="text/html" id="shopTpl">
+        {{each result v i}}
+                <li data-shopid="{{v.shopId}}">
+                    <a href="javascript:;">{{v.shopName}}
+                        <span></span>
+                    </a>
+                </li>
+        {{/each}}
+    </script>
+
+    <!-- 地区信息 -->
+    <script type="text/html" id="placeTpl">
+        {{each result v i}}
+        <li data-areaid="{{v.areaId}}">
+            <a href="javascript:;">{{v.areaName}}
+                <span></span>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+ 
+    <!-- 商品信息列表 -->
+    <script type="text/html" id="productTpl">
+        {{each result v i}}
+            <li>
+                <a href="#">
+                    <img src="{{v.productImg}}" alt="">
+                    <p>{{v.productName}}</p>
+                    <span>{{v.productPrice}}</span>
+                </a>
+                <a href="javascript:;" class="btn">凑单</a>
+            </li>
+        {{/each}}
+    </script>
+
+    <script src="./lib/lib-flexible/flexible.debug.js"></script>
+    <script src="./lib/jquery/jquery.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="js/common/route.js"></script>
+    <script src="js/pages/common.js"></script>
+    <script src="js/pages/gsproduct.js"></script>
+
+    <script>
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+.displaybox .display {
+  width: 100%;
+  height: 6.66675rem;
+  text-align: center;
+  padding: 0.26667rem 0.53334rem;
+}
+.displaybox .display > h3 {
+  font-weight: 500;
+  font-size: 15px;
+}
+[data-dpr='2'] .displaybox .display > h3 {
+  font-size: 30px;
+}
+[data-dpr='2.5'] .displaybox .display > h3 {
+  font-size: 38px;
+}
+[data-dpr="2.75"] .displaybox .display > h3 {
+  font-size: 41px;
+}
+[data-dpr="3"] .displaybox .display > h3 {
+  font-size: 45px;
+}
+[data-dpr="4"] .displaybox .display > h3 {
+  font-size: 60px;
+}
+.displaybox .display img {
+  display: block;
+  margin: 0 auto;
+  width: 5.3334rem;
+  height: 5.3334rem;
+}
+.displaybox .nav {
+  width: 100%;
+  height: 0.9200115rem;
+  border-top: 1px solid #C74400;
+  border-bottom: 1px solid #C74400;
+}
+.displaybox .nav ul li {
+  height: 0.8666775rem;
+  float: left;
+  width: 33.33%;
+  border-right: 1px solid #C74400;
+  text-align: center;
+  line-height: 0.8666775rem;
+}
+.displaybox .nav ul li a {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+[data-dpr='2'] .displaybox .nav ul li a {
+  font-size: 32px;
+}
+[data-dpr='2.5'] .displaybox .nav ul li a {
+  font-size: 40px;
+}
+[data-dpr="2.75"] .displaybox .nav ul li a {
+  font-size: 44px;
+}
+[data-dpr="3"] .displaybox .nav ul li a {
+  font-size: 48px;
+}
+[data-dpr="4"] .displaybox .nav ul li a {
+  font-size: 64px;
+}
+.displaybox .nav ul li:first-child {
+  background-color: #FF9915;
+}
+.displaybox .nav ul li:nth-last-child(-n+2) {
+  background-color: #FFC321;
+}
+.displaybox .gobuy {
+  height: 1.200015rem;
+  width: 100%;
+  line-height: 1.200015rem;
+  padding: 0 0.26667rem;
+}
+.displaybox .gobuy .logo {
+  float: left;
+}
+.displaybox .gobuy .logo img {
+  vertical-align: middle;
+}
+.displaybox .gobuy .logo span {
+  font-size: 14px;
+}
+[data-dpr='2'] .displaybox .gobuy .logo span {
+  font-size: 28px;
+}
+[data-dpr='2.5'] .displaybox .gobuy .logo span {
+  font-size: 35px;
+}
+[data-dpr="2.75"] .displaybox .gobuy .logo span {
+  font-size: 39px;
+}
+[data-dpr="3"] .displaybox .gobuy .logo span {
+  font-size: 42px;
+}
+[data-dpr="4"] .displaybox .gobuy .logo span {
+  font-size: 56px;
+}
+.displaybox .gobuy .btn {
+  float: right;
+}
+.displaybox .gobuy .btn span {
+  font-weight: 500;
+  color: red;
+  font-size: 14px;
+  padding-right: 0.26667rem;
+}
+[data-dpr='2'] .displaybox .gobuy .btn span {
+  font-size: 28px;
+}
+[data-dpr='2.5'] .displaybox .gobuy .btn span {
+  font-size: 35px;
+}
+[data-dpr="2.75"] .displaybox .gobuy .btn span {
+  font-size: 39px;
+}
+[data-dpr="3"] .displaybox .gobuy .btn span {
+  font-size: 42px;
+}
+[data-dpr="4"] .displaybox .gobuy .btn span {
+  font-size: 56px;
+}
+.displaybox .gobuy .btn a {
+  padding: 0.133335rem 0.26667rem;
+  background-color: #FF5500;
+  border-radius: 0.213336rem;
+  color: #fff;
+  font-weight: 600;
+}
+.displaybox .statement {
+  height: 1.5333525rem;
+  width: 100%;
+  border-top: 1px solid #666;
+  padding: 0.213336rem 0.26667rem;
+}
+.displaybox .statement span {
+  text-align: left;
+}
+.displaybox .comment .title {
+  width: 100%;
+  height: 0.933345rem;
+  background-color: #DBDBDB;
+  text-align: center;
+  line-height: 0.933345rem;
+  font-size: 15px;
+  border-top: 3px solid #747474;
+}
+[data-dpr='2'] .displaybox .comment .title {
+  font-size: 30px;
+}
+[data-dpr='2.5'] .displaybox .comment .title {
+  font-size: 38px;
+}
+[data-dpr="2.75"] .displaybox .comment .title {
+  font-size: 41px;
+}
+[data-dpr="3"] .displaybox .comment .title {
+  font-size: 45px;
+}
+[data-dpr="4"] .displaybox .comment .title {
+  font-size: 60px;
+}
+.displaybox .comment .content ul li {
+  padding: 0.26667rem;
+  border-bottom: 1px solid #ccc;
+}
+.displaybox .comment .content ul li .top {
+  padding-bottom: 0.26667rem;
+}
+.displaybox .comment .content ul li .top .name {
+  float: left;
+  color: #666;
+}
+.displaybox .comment .content ul li .top .right {
+  color: #666;
+}
+.displaybox .comment .content ul li .top .right span {
+  float: right;
+}
+.displaybox .comment .content ul li .top .right p {
+  float: right;
+}
+.displaybox .comment .content ul li .main {
+  padding-bottom: 0.26667rem;
+  font-size: 14px;
+}
+[data-dpr='2'] .displaybox .comment .content ul li .main {
+  font-size: 28px;
+}
+[data-dpr='2.5'] .displaybox .comment .content ul li .main {
+  font-size: 35px;
+}
+[data-dpr="2.75"] .displaybox .comment .content ul li .main {
+  font-size: 39px;
+}
+[data-dpr="3"] .displaybox .comment .content ul li .main {
+  font-size: 42px;
+}
+[data-dpr="4"] .displaybox .comment .content ul li .main {
+  font-size: 56px;
+}

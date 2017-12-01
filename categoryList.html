@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="yes" name="apple-touch-fullscreen" />
+  <meta content="telephone=no,email=no" name="format-detection" />
+  <meta content="maximum-dpr=2" name="flexible" />
+  <meta content="modeName=750-12" name="grid" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="./css/commom.css">
+  <link rel="stylesheet" href="./css/categoryList.css">
+  <title>比价搜索</title>
+</head>
+<body>
+<div class="container">
+    <!--头部固定-->
+  <div class="m_header">
+    <div class="m_log">
+      <div class="left">
+        <img src="./images/header_logo.png" alt="">
+      </div>
+      <div class="right">
+        <img src="./images/header_app.png" alt="">
+      </div>
+    </div>
+    <div class="m_search clearfix">
+      <input type="text" placeholder="请输入您想比价的商品">
+      <button>搜索</button>
+    </div>
+  </div>
+  <!-- 三级导航 -->
+  <div class="path">
+    <div class="left clearfix">
+       <ul> 
+         <!-- <li><a href="#"> 首页 ></a></li>
+         <li><a href="#"> 全部分类 ></a></li>
+         <li><a href="#"> 电视 ></a></li> -->
+       </ul>
+       <a href="javascript:;" class="button">筛选</a>          
+    </div>
+     <div class="product">
+       <ul>
+         <!-- 挖个坑 -->
+          <!-- <li >
+            <a href="javascript:;" >
+              <img class="pull-left" src="./images/product.jpg">
+              <div class="body">
+                <h4>啦啦啦啦啦啦啦啦啦啦啦啦</h4>
+                <span class="price">$11.00</span>
+                <p class='clearfix'>
+                  <span>报价(10) </span>    
+                  <span>评论(55555)</span>
+                </p>
+              </div>
+          </a>
+          </li> -->
+       </ul>
+     </div>
+  </div>
+
+  
+   <!-- 分页 -->
+   <div class="page">
+     <!-- 挖个坑 -->
+   </div>
+
+  <!--底部-->
+  <div class="footer">
+      <div class="bottom_nav clearfix">
+        <ul>
+          <li>
+            <a href="#">登录</a>
+          </li>
+          <li>
+              <a href="#">注册</a>
+          </li>
+          <li>
+              <a href="#"><img src="./images/top.jpg" alt=""> 回到顶部</a>
+          </li>
+        </ul>
+      </div>
+      <div class="bottom">
+        <p><span>手机掌上APP下载</span>慢慢买手机版 -- 掌上比价平台</p>
+        <span>m.manmanbuy.com</span>
+      </div>
+  </div>
+</div>
+
+<!-- 三级菜单路径 -->
+<script type="text/html" id="pathTpl">
+    <li><a href="index.html"> 首页 ></a></li>
+    <li><a href="category.html"> 全部分类 ></a></li>
+    <li><a href="#"> {{result[0].category}} ></a></li>
+  </script>
+
+
+<!-- 产品模板引擎 -->
+<script type="text/html" id="catListTpl">
+  {{each result v i}}
+  <li >
+    <a href=""  data-productid="{{v.productId}}">
+      <!-- <img class="pull-left" src="./images/product.jpg"> -->
+      {{@ v.productImg }}
+      <div class="body">
+        <h4>{{v.productName}}</h4>
+        <span class="price">{{v.productPrice}}</span>
+        <p class='clearfix'>
+          <span>{{v.productQuote}} </span>    
+          <span>{{v.productCom}}</span>
+        </p>
+      </div>
+   </a>
+  </li>
+  {{/each}}
+</script>
+
+<!-- 分页模块 -->
+<script type="text/html" id="pageTpl">
+
+ <div class="front">
+    <a href="javascript:;">上一页</a>
+  </div>
+  <div class="middle">
+    <select name="select" id="selectPage">
+     <%  for(var i=1; i <= page; i++){ %>
+      <option value="{{i}}" id="option" ><%= i%> / <%= page%></option>
+      <% } %>
+    </select>
+  </div>
+  <div class="right">
+    <a href="javascript:;">下一页</a>
+  </div>
+
+</script>
+
+
+
+<script src="./lib/lib-flexible/flexible.debug.js"></script>
+<script src="./lib/jquery/jquery.js"></script>
+<script src="./lib/artTemplate/template-web.js"></script>
+<script src="js/common/route.js"></script>
+<script src="js/pages/common.js"></script>
+<script src="js/pages/categoryList.js"></script>
+
+<script>
+    //  window.onload = function( ) {
+    //     location.href = 'index.html';
+    // };
+</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+@import "../less/px2rem.less";
+.clearfix() {
+    &::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+}
+
+.m_header {
+    height: 100/2*@base;
+    position:relative;
+    .left {
+        color: #fff;
+        font-weight: 600;
+        .font-size(40);
+        line-height: 50*@base;
+        padding-left: 160*@base;
+    }
+    .back{
+        a{
+            width:55/2*@base;
+            height:55/2*@base;
+            background-image : url("../images/icon_bar.png");
+            background-size: 220px 132px;
+            background-position: -98px -7px;
+            position:absolute;
+            top:12*@base;
+            left:20*@base;
+        }
+     
+    }
+  }
+
+.coupon{
+    width:100%;
+    ul{
+        li{
+            width:30%;
+            margin:1.6%;
+            height:146/2*@base;
+            border:1px solid #ccc;
+            float:left;
+            text-align:center;
+
+           a{
+               display:block;
+                img{
+                    width:50*@base;
+                    height:50*@base;
+                    display:inline-block;
+                    padding-top:4*@base;
+                }
+                p{ 
+                    color:#000;
+                    .font-size(28);
+
+                }
+            }
+        }
+    }
+}

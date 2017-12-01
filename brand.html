@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <meta content="maximum-dpr=2" name="flexible" />
+    <meta content="modeName=750-12" name="grid" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="./css/commom.css">
+    <link rel="stylesheet" href="./css/brand.css">
+    <title>品牌大全</title>
+</head>
+
+<body>
+    <div class="container">
+        <!--头部固定-->
+        <div class="m_header">
+            <div class="m_log">
+                <div class="back">
+                    <a href="javascript:history.go(-1);"></a>
+                </div>
+                <div class="left">
+                    品牌大全
+                </div>
+                <div class="right">
+                    <img src="./images/header_app.png" alt="">
+                </div>
+            </div>
+            <div class="m_search clearfix">
+                <input type="text" placeholder="请输入您想比价的商品">
+                <button>搜索</button>
+            </div>
+        </div>
+        <!-- 三级导航 -->
+        <div class="path">
+            <div class="left clearfix">
+                <ul>
+                    <li>
+                        <a href="#"> 首页 ></a>
+                    </li>
+                    <li>
+                        <a href="#"> 全部分类 ></a>
+                    </li>
+                </ul>
+                <a href="javascript:;" class="button">筛选</a>
+            </div>
+        </div>
+
+        <!-- 品牌列表 -->
+        <div class="toptitle">
+            <div class="title">平板电视哪个牌子好</div>
+
+            <!-- 品牌排行榜 -->
+            <div class="sort">
+                <ul>
+                    <!-- <li>
+                        <a href="#">
+                            <span>1</span>
+                            <div class="name">
+                                <h4>三星平板电视</h4>
+                                <p>30天全网销售:20000件</p>
+                            </div>
+                        </a>
+
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+
+        <!-- 产品销量排行 -->
+        <div class="sale">
+            <div class="title">平板电视产量销量排行</div>
+            <div class="content">
+                <ul>
+                    <!-- <li>
+                        <a href="#">
+                            <div class="img">
+                                <img src="./images/product.jpg" alt="">
+                            </div>
+                            <div class="right">
+                                <h4>飞利浦飞利浦飞利浦飞利浦飞利浦飞利浦</h4>
+                                <p>#2299.00</p>
+                                <span>报价(7)  评论(6)</span>
+                            </div>
+                        </a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+
+        <!-- 评论 -->
+        <div class="comment1">
+            <div class="title">平板电视最新评论</div>
+            <div class="product1">
+                <ul>
+                    <li>
+                        <a href="#" class="clearfix">
+                            <div class="top">
+                                <!-- <div class="img">
+                                    <img src="./images/product.jpg" alt="">
+                                </div>
+                                <div class="right">
+                                    <p>飞利浦飞利浦飞利浦飞利浦飞利浦飞利浦</p>
+                                </div> -->
+                            </div>
+
+                            <div class="comtext">
+
+                                <!-- <div class="info clearfix">
+                                    <span class="span1">*****</span>
+                                    <span class="span2">2017/12/1</span>
+                                </div>
+                                <div class="content">
+                                    lalalalalalalalalalalalalallaaaaaaaaaaaaaaaaaaaaaa 
+                                    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa 
+                                    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                                </div> -->
+                            </div>
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!--底部-->
+        <div class="footer">
+            <div class="bottom_nav clearfix">
+                <ul>
+                    <li>
+                        <a href="#">登录</a>
+                    </li>
+                    <li>
+                        <a href="#">注册</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/top.jpg" alt=""> 回到顶部</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <p>
+                    <span>手机掌上APP下载</span>慢慢买手机版 -- 掌上比价平台</p>
+                <span>m.manmanbuy.com</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 品牌排行 -->
+    <script type="text/html" id="brandTpl">
+        {{each result v i}}
+        <li>
+            <a href="categoryList.html?categoryid={{v.categoryId}}&pageid=1">
+                <span>{{i+1}}</span>
+                <div class="name">
+                    <h4>{{v.brandName}}</h4>
+                    <p>{{v.brandInfo}}</p>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+    <!-- 销量排行 -->
+    <script type="text/html" id="saleTpl">
+        {{each result v i}}
+        <li>
+            <a href="#">
+                <div class="img">
+                    {{@ v.productImg}}
+                </div>
+                <div class="right">
+                    <h4>{{v.productName}}</h4>
+                    <p>{{v.productPrice}}</p>
+                    <span>{{v.productQuote}} {{v.productCom}}</span>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+
+
+    <!-- 评论上部分 -->
+    <script type="text/html" id="topTpl">
+        <div class="img">
+            {{@result[0].productImg}}
+        </div>
+        <div class="right">
+            <p>{{result[0].productName}}</p>
+        </div>
+    </script>
+
+    <!-- 评论下部分 -->
+    <script type="text/html" id="bottomTpl">
+        {{each result v i}}
+        <div class="info clearfix">
+            <span class="span1">{{v.comName}}</span>
+            <span class="span2">{{v.comTime}}</span>
+        </div>
+        <div class="content">
+            {{v.comContent}}
+        </div>
+        {{/each}}
+    </script>
+
+    <script src="./lib/lib-flexible/flexible.debug.js"></script>
+    <script src="./lib/jquery/jquery.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="js/common/route.js"></script>
+    <script src="js/pages/common.js"></script>
+    <script src="js/pages/brand.js"></script>
+
+    <script>
+        //  window.onload = function( ) {
+        //     location.href = 'index.html';
+        // };
+    </script>
+</body>
+
+</html>

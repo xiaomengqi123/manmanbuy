@@ -1,0 +1,231 @@
+.m_header {
+  height: 1.33335rem;
+  position: relative;
+}
+.m_header .left {
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.33335rem;
+  padding-left: 4.26672rem;
+}
+[data-dpr='2'] .m_header .left {
+  font-size: 40px;
+}
+[data-dpr='2.5'] .m_header .left {
+  font-size: 50px;
+}
+[data-dpr="2.75"] .m_header .left {
+  font-size: 55px;
+}
+[data-dpr="3"] .m_header .left {
+  font-size: 60px;
+}
+[data-dpr="4"] .m_header .left {
+  font-size: 80px;
+}
+.m_header .back a {
+  width: 0.7333425rem;
+  height: 0.7333425rem;
+  background-image: url("../images/icon_bar.png");
+  background-size: 220px 132px;
+  background-position: -98px -7px;
+  position: absolute;
+  top: 0.320004rem;
+  left: 0.53334rem;
+}
+.gsproduct .topbar {
+  width: 100%;
+  height: 1.0000125rem;
+  border-bottom: 1px solid #666;
+}
+.gsproduct .topbar ul li {
+  height: 1.0000125rem;
+  line-height: 1.0000125rem;
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  position: relative;
+}
+.gsproduct .topbar ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #000;
+  font-size: 15px;
+  font-weight: 600;
+}
+[data-dpr='2'] .gsproduct .topbar ul li a {
+  font-size: 30px;
+}
+[data-dpr='2.5'] .gsproduct .topbar ul li a {
+  font-size: 38px;
+}
+[data-dpr="2.75"] .gsproduct .topbar ul li a {
+  font-size: 41px;
+}
+[data-dpr="3"] .gsproduct .topbar ul li a {
+  font-size: 45px;
+}
+[data-dpr="4"] .gsproduct .topbar ul li a {
+  font-size: 60px;
+}
+.gsproduct .topbar ul li a span {
+  width: 0;
+  height: 0;
+  border-top: 0.186669rem solid transparent;
+  border-right: 0.186669rem solid transparent;
+  border-left: 0.186669rem solid transparent;
+  border-bottom: 0.186669rem solid #666;
+  position: absolute;
+  right: 0.53334rem;
+  bottom: 0.400005rem;
+}
+.gsproduct .list {
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+  background-color: #fff;
+}
+.gsproduct .list.now {
+  display: none;
+}
+.gsproduct .list ul li {
+  height: 1.0000125rem;
+  width: 100%;
+  padding-left: 1.33335rem;
+  border-bottom: 1px solid #666;
+  line-height: 1.0000125rem;
+}
+.gsproduct .list ul li a {
+  width: 100%;
+  color: #666;
+  font-size: 14px;
+  display: block;
+}
+[data-dpr='2'] .gsproduct .list ul li a {
+  font-size: 28px;
+}
+[data-dpr='2.5'] .gsproduct .list ul li a {
+  font-size: 35px;
+}
+[data-dpr="2.75"] .gsproduct .list ul li a {
+  font-size: 39px;
+}
+[data-dpr="3"] .gsproduct .list ul li a {
+  font-size: 42px;
+}
+[data-dpr="4"] .gsproduct .list ul li a {
+  font-size: 56px;
+}
+.gsproduct .list1 {
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+  background-color: #fff;
+}
+.gsproduct .list1.now {
+  display: none;
+}
+.gsproduct .list1 ul li {
+  height: 1.0000125rem;
+  width: 100%;
+  padding-left: 1.33335rem;
+  border-bottom: 1px solid #666;
+  line-height: 1.0000125rem;
+}
+.gsproduct .list1 ul li a {
+  width: 100%;
+  color: #666;
+  font-size: 14px;
+  display: block;
+}
+[data-dpr='2'] .gsproduct .list1 ul li a {
+  font-size: 28px;
+}
+[data-dpr='2.5'] .gsproduct .list1 ul li a {
+  font-size: 35px;
+}
+[data-dpr="2.75"] .gsproduct .list1 ul li a {
+  font-size: 39px;
+}
+[data-dpr="3"] .gsproduct .list1 ul li a {
+  font-size: 42px;
+}
+[data-dpr="4"] .gsproduct .list1 ul li a {
+  font-size: 56px;
+}
+.gsproduct .productList {
+  width: 100%;
+  background-color: #ccc;
+}
+.gsproduct .productList ul li {
+  float: left;
+  width: 49%;
+  text-align: center;
+  background-color: #fff;
+  border: 12px solid #ccc;
+  height: 6.0667425rem;
+  position: relative;
+}
+.gsproduct .productList ul li a img {
+  height: 4.00005rem;
+  width: 3.73338rem;
+}
+.gsproduct .productList ul li a p {
+  font-size: 15px;
+  color: #000;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+[data-dpr='2'] .gsproduct .productList ul li a p {
+  font-size: 30px;
+}
+[data-dpr='2.5'] .gsproduct .productList ul li a p {
+  font-size: 38px;
+}
+[data-dpr="2.75"] .gsproduct .productList ul li a p {
+  font-size: 41px;
+}
+[data-dpr="3"] .gsproduct .productList ul li a p {
+  font-size: 45px;
+}
+[data-dpr="4"] .gsproduct .productList ul li a p {
+  font-size: 60px;
+}
+.gsproduct .productList ul li a span {
+  color: #FF9401;
+  font-size: 13px;
+  margin-left: -1.06668rem;
+  padding-top: 0.53334rem;
+}
+[data-dpr='2'] .gsproduct .productList ul li a span {
+  font-size: 26px;
+}
+[data-dpr='2.5'] .gsproduct .productList ul li a span {
+  font-size: 33px;
+}
+[data-dpr="2.75"] .gsproduct .productList ul li a span {
+  font-size: 36px;
+}
+[data-dpr="3"] .gsproduct .productList ul li a span {
+  font-size: 39px;
+}
+[data-dpr="4"] .gsproduct .productList ul li a span {
+  font-size: 52px;
+}
+.gsproduct .productList ul li .btn {
+  margin-top: 0.133335rem;
+  display: inline-block;
+  background-color: #FF9401;
+  width: 1.33335rem;
+  height: 0.53334rem;
+  border-radius: 0.133335rem;
+  color: #fff;
+  line-height: 0.53334rem;
+  text-align: center;
+  float: right;
+  margin-right: 0.26667rem;
+}

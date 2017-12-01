@@ -1,0 +1,78 @@
+@import "../less/px2rem.less";
+
+.m_header {
+    height: 100/2*@base;
+    position:relative;
+    .left {
+        color: #fff;
+        font-weight: 600;
+        .font-size(40);
+        line-height: 50*@base;
+        padding-left: 140*@base;
+    }
+    .back{
+        a{
+            width:55/2*@base;
+            height:55/2*@base;
+            background-image : url("../images/icon_bar.png");
+            background-size: 220px 132px;
+            background-position: -98px -7px;
+            position:absolute;
+            top:15*@base;
+            left:20*@base;
+        }
+     
+    }
+  }
+
+.discount{
+     width:100%;
+    ul{
+        width: 100%;
+        height: 100%;
+        
+        li{
+            float:left;
+            height:270*@base;
+            width: 50%;
+            border-right:1px solid #ccc;
+            border-bottom:1px solid #ccc;
+            padding:12*@base;
+            &:ntn-child(add){
+                border-right:0;
+            }
+            a{
+                width: 100%;
+                height: 100%;
+                display:block;
+                text-align:center;
+                img{
+                  width:140*@base;
+                  height:140*@base;
+                  margin-bottom:15px ;
+                }
+                h4{
+                    width: 100%;
+                 .font-size(28);
+                 font-weight:500;
+                color:#000;
+                text-align:left;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                }
+                p{
+                 color:#FF9000;
+                 .font-size(28);
+                 margin:5*@base 0;
+                 
+                }
+                span{
+                color:#666;
+                .font-size(24);
+                }
+                
+            }
+        }
+    }
+}
